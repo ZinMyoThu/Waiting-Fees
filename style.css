@@ -1,0 +1,139 @@
+:root {
+    --bg-color: #000000;
+    --card-bg: #1C1C1E;
+    --accent-blue: #0A84FF;
+    --accent-red: #FF453A;
+    --accent-green: #32D74B;
+    --text-main: #FFFFFF;
+    --text-sub: #8E8E93;
+    --input-bg: #2C2C2E;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 92%;
+    max-width: 340px;
+    padding: 24px;
+    background: var(--card-bg);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h3 {
+    margin: 0 0 20px 0;
+    font-size: 19px;
+    color: var(--accent-blue);
+    text-align: center;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 11px;
+    color: var(--text-sub);
+    margin: 0 0 6px 5px;
+    display: block;
+    text-transform: uppercase;
+}
+
+input[type="time"] {
+    width: 100%;
+    padding: 14px;
+    background: var(--input-bg);
+    border: 1px solid #3A3A3C;
+    border-radius: 14px;
+    color: var(--text-main);
+    font-size: 18px;
+    outline: none;
+    display: block;
+    -webkit-appearance: none;
+}
+
+.timer-display {
+    font-size: 48px;
+    font-weight: 200;
+    margin: 20px 0;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 12px 0;
+}
+
+button {
+    width: 100%;
+    padding: 17px;
+    border-radius: 16px;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.btn-start {
+    background-color: var(--accent-blue);
+    color: white;
+}
+
+.btn-stop {
+    background-color: var(--accent-red);
+    color: white;
+}
+
+.btn-reset {
+    background-color: transparent;
+    color: var(--text-sub);
+    border: 1px solid #333;
+}
+
+.result-card {
+    margin-top: 15px;
+    padding: 18px;
+    background: rgba(10, 132, 255, 0.12);
+    border-radius: 20px;
+    display: none;
+    border: 1px solid rgba(10, 132, 255, 0.2);
+}
+
+.detail-section {
+    margin-top: 12px;
+    text-align: left;
+    font-size: 13px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    display: none;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.toggle-detail {
+    color: var(--accent-blue);
+    font-size: 13px;
+    text-decoration: underline;
+    margin: 10px 0;
+    display: inline-block;
+    cursor: pointer;
+}
